@@ -10,9 +10,9 @@ public class ItemTest {
     @Test
     public void createItem() {
 
-        Item item = new Item("+5 Dexterity Vest", 10, 20);
+        Item item = new Item("flower item", 10, 20);
 
-        assertEquals("+5 Dexterity Vest", item.getName());
+        assertEquals("flower item", item.getName());
         assertEquals(10, item.getSellIn(), 0);
         assertEquals(20, item.getQuality(), 0);
         System.out.println(item);
