@@ -1,7 +1,7 @@
 package com.gildedrose.domain;
 
 
-final class Item {
+public final class Item {
 
     private final String name;
 

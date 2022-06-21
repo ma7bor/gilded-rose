@@ -35,7 +35,7 @@ public class NormalItem implements UpdateQuality {
         return item.getQuality();
     }
 
-    private void calculateQuality(int value) {
+    public void calculateQuality(int value) {
 
         if (getQuality() + value > 50) {
             item.setQuality(50);
