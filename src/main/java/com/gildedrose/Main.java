@@ -18,10 +18,10 @@ public class Main {
         ItemFactory itemFactory =new ItemFactory();
 
 
-        UpdateQuality item1=itemFactory.getItem(ItemNames.AGED_BRIE,"Aged Brie", 2, 0);
+        UpdateQuality item1=itemFactory.getItem(ItemNames.AGED_BRIE,ItemNames.SULFURAS, 2, 0);
         UpdateQuality item2=itemFactory.getItem(ItemNames.CONJURED,ItemNames.CONJURED, 15, 20);
-        UpdateQuality item3=itemFactory.getItem(ItemNames.SULFURAS,"Sulfuras", 0, 80);
-        UpdateQuality item4=itemFactory.getItem(ItemNames.SULFURAS,"Sulfuras", 0, 80);
+        UpdateQuality item3=itemFactory.getItem(ItemNames.SULFURAS,ItemNames.SULFURAS, 0, 80);
+        UpdateQuality item4=itemFactory.getItem(ItemNames.SULFURAS,ItemNames.SULFURAS, 0, 80);
         UpdateQuality item5=itemFactory.getItem(ItemNames.BACKSTAGE,ItemNames.BACKSTAGE, 15, 20);
         UpdateQuality item6=itemFactory.getItem(ItemNames.BACKSTAGE,ItemNames.BACKSTAGE, 15, 20);
         UpdateQuality item7=itemFactory.getItem(ItemNames.BACKSTAGE,ItemNames.BACKSTAGE, 15, 20);
