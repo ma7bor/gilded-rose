@@ -23,11 +23,11 @@ public class NormalItem implements UpdateQuality {
         return item.getName();
     }
 
-    public int getsellIn() {
+    public int getSellIn() {
         return item.getSellIn();
     }
 
-    public void setsellIn() {
+    public void setSellIn() {
         item.setSellIn();
     }
 
@@ -50,11 +50,11 @@ public class NormalItem implements UpdateQuality {
 
     @Override
     public void updateQ() {
-        if (getsellIn() > 0) {
+        if (getSellIn() > 0) {
             calculateQuality(-1);
         } else {
             calculateQuality(-2);
         }
-        setsellIn();
+        setSellIn();
     }
 }

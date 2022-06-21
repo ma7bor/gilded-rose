@@ -9,11 +9,11 @@ public class AgedBrie extends NormalItem {
     @Override
     public void updateQ() {
 
-        if (getsellIn() > 0) {
+        if (getSellIn() > 0) {
             calculateQuality(1);
         } else {
             calculateQuality(2);
         }
-        setsellIn();
+        setSellIn();
     }
 }

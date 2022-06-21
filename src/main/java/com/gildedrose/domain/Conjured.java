@@ -9,11 +9,11 @@ public class Conjured extends NormalItem {
     @Override
     public void updateQ() {
 
-        if (getsellIn() > 0) {
+        if (getSellIn() > 0) {
             calculateQuality(-2);
         } else {
             calculateQuality(-4);
         }
-        setsellIn();
+        setSellIn();
     }
 }
