@@ -1,5 +1,6 @@
 package com.gildedrose.domain;
 
+import com.gildedrose.interfaces.ItemNames;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,8 +18,8 @@ public class GildedRoseTest {
     @Before
     public void setupItemList() {
         gildedRose = new GildedRose();
-        normalItem = new NormalItem("+5 Dexterity Vest", 10, 20);
-        agedBrie = new AgedBrie("Aged Brie", 2, 0);
+        normalItem = new NormalItem(ItemNames.NORMAL_ITEM, 10, 20);
+        agedBrie = new AgedBrie(ItemNames.AGED_BRIE, 2, 0);
     }
 
     @Test

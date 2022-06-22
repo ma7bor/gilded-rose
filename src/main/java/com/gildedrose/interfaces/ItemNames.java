@@ -5,5 +5,5 @@ public interface ItemNames {
    String AGED_BRIE = "Aged Brie";
    String CONJURED = "Conjured";
    String SULFURAS = "Sulfuras";
-   String NORMAL_ITEM = "NoramlItem";
+   String NORMAL_ITEM = "+5 Dexterity Vest";
 }

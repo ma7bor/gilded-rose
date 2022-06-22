@@ -1,5 +1,6 @@
 package com.gildedrose.domain;
 
+import com.gildedrose.interfaces.ItemNames;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -36,7 +37,7 @@ public class ConjuredTest {
     @Test
     public void updateQualityConjuredExpired() {
 
-        Conjured conjured = new Conjured("Conjured Mana Cake", -1, 6);
+        Conjured conjured = new Conjured(ItemNames.CONJURED, -1, 6);
         conjured.updateQ();
         assertEquals(-2, conjured.getSellIn(), 0);
         assertEquals(2, conjured.getQuality(), 0);
@@ -45,12 +46,12 @@ public class ConjuredTest {
     @Test
     public void qualityMinZERO() {
 
-        Conjured conjured = new Conjured("Conjured Mana Cake", 1, 1);
+        Conjured conjured = new Conjured(ItemNames.CONJURED, 1, 1);
         conjured.updateQ();
         assertEquals(0, conjured.getSellIn(), 0);
         assertEquals(0, conjured.getQuality(), 0);
 
-        conjured = new Conjured("Conjured Mana Cake", -1, 0);
+        conjured = new Conjured(ItemNames.CONJURED, -1, 0);
         conjured.updateQ();
         assertEquals(-2, conjured.getSellIn(), 0);
         assertEquals(0, conjured.getQuality(), 0);
