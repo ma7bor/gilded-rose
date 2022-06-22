@@ -4,6 +4,7 @@ target/
 # IDE
 .classpath
 .project
+.idea
 /bin/
 
 # VSCode
