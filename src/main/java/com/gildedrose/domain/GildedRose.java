@@ -9,16 +9,16 @@ public class GildedRose {
 
     private List<UpdateQuality> itemList = new ArrayList<>();
    
-    public List<UpdateQuality> inventory() {
+    public List<UpdateQuality> itemList() {
         return this.itemList;
     }
 
     public void addItem(UpdateQuality item) {
-        inventory().add(item);
+        itemList().add(item);
     }
 
     public void updateQuality() {
-        for (UpdateQuality item : inventory()) {
+        for (UpdateQuality item : itemList()) {
             item.updateQ();
         }
     }
@@ -26,7 +26,7 @@ public class GildedRose {
     @Override
     public String toString() {
         StringBuilder representation = new StringBuilder();
-        for (UpdateQuality item : inventory()) {
+        for (UpdateQuality item : itemList()) {
             representation.append(item.toString());
             representation.append('\n');
         }
