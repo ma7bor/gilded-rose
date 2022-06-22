@@ -13,6 +13,10 @@ public class GildedRose {
         return this.itemList;
     }
 
+    /**
+     *
+     * @param item
+     */
     public void addItem(UpdateQuality item) {
         itemList().add(item);
     }

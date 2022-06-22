@@ -1,5 +1,5 @@
 # gilded-rose
-
+Introduction : this project is a refactoring for the gildedrose project.
 
 ## Diagram Class (UML)
 ![Proto UML](./gildedroseUML.png)

@@ -35,6 +35,10 @@ public class NormalItem implements UpdateQuality {
         return item.getQuality();
     }
 
+    /**
+     *
+     * @param value
+     */
     public void calculateQuality(int value) {
 
         if (getQuality() + value > 50) {
